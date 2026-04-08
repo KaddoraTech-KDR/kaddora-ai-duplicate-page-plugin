@@ -1,1 +1,305 @@
+/* BASE */
+.kadp-duplicate-page,
+.kadp-automation,
+.kadp-ai-tools,
+.kadp-dashboard,
+.kadp-history,
+.kadp-settings-page {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
 
+/* HEADER */
+.kadp-header h1 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.kadp-subtitle {
+  color: #6b7280;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+/* CARD */
+.kadp-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 18px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  transition: all 0.2s ease;
+  margin-bottom: 18px;
+}
+
+.kadp-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.06);
+}
+
+.kadp-card-header h2,
+.kadp-card-header h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* FIELD */
+.kadp-field {
+  margin-bottom: 14px;
+  display: flex;
+  flex-direction: column;
+}
+
+.kadp-field label {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+/* INPUT + SELECT */
+.kadp-input,
+.kadp-field input,
+.kadp-field select,
+.kadp-textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-size: 13px;
+  transition: all 0.2s;
+}
+
+.kadp-textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.kadp-input:focus,
+.kadp-field input:focus,
+.kadp-field select:focus,
+.kadp-textarea:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.15);
+  outline: none;
+}
+
+/* ACTIONS */
+.kadp-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 14px;
+}
+
+.kadp-actions-inline {
+  display: flex;
+  gap: 6px;
+}
+
+/* BUTTONS */
+.kadp-btn,
+.kadp-duplicate-btn,
+.kadp-bulk-duplicate-btn {
+  border-radius: 8px !important;
+  padding: 8px 16px !important;
+  font-weight: 500 !important;
+}
+
+.kadp-btn-danger {
+  border-color: #fecaca !important;
+  color: #dc2626 !important;
+}
+
+.kadp-btn-danger:hover {
+  background: #dc2626 !important;
+  color: #fff !important;
+}
+
+.kadp-btn-secondary {
+  border-color: #d1d5db !important;
+  color: #374151 !important;
+}
+
+.kadp-btn-secondary:hover {
+  background: #111827 !important;
+  color: #fff !important;
+}
+
+/* RESULT BOX */
+.kadp-result-box {
+  margin-top: 15px;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  background: #f9fafb;
+  border: 1px dashed #e5e7eb;
+  color: #374151;
+}
+
+.kadp-result-box.success {
+  background: #ecfdf5;
+  border-color: #bbf7d0;
+  color: #166534;
+}
+
+.kadp-result-box.error {
+  background: #fef2f2;
+  border-color: #fecaca;
+  color: #991b1b;
+}
+
+/* NOTICE */
+.kadp-notice {
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-size: 13px;
+}
+
+.kadp-notice.success {
+  background: #ecfdf5;
+  color: #166534;
+  border: 1px solid #bbf7d0;
+}
+
+/* TABLE */
+.kadp-table-wrap {
+  overflow-x: auto;
+}
+
+.kadp-table {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.kadp-table thead th {
+  background: #f9fafb;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.kadp-table tbody tr:hover {
+  background: #f3f4f6;
+}
+
+.kadp-table td {
+  font-size: 13px;
+}
+
+/* STATUS */
+.kadp-status {
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.kadp-status.active,
+.kadp-status.success {
+  background: #ecfdf5;
+  color: #16a34a;
+}
+
+.kadp-status.paused {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.kadp-status.failed {
+  background: #fef2f2;
+  color: #dc2626;
+}
+
+/* EMPTY */
+.kadp-empty {
+  text-align: center;
+  padding: 20px;
+  color: #9ca3af;
+}
+
+/* GRID */
+.kadp-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+/* CHECKBOX */
+.kadp-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.kadp-checkbox input {
+  display: none;
+}
+
+.kadp-checkbox span {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  position: relative;
+}
+
+.kadp-checkbox input:checked+span {
+  background: #6366f1;
+  border-color: #6366f1;
+}
+
+.kadp-checkbox input:checked+span::after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 1px;
+  width: 4px;
+  height: 8px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+/* TOGGLE */
+.kadp-toggle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.kadp-toggle input {
+  display: none;
+}
+
+.kadp-toggle span {
+  width: 36px;
+  height: 20px;
+  background: #d1d5db;
+  border-radius: 999px;
+  position: relative;
+}
+
+.kadp-toggle span::before {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background: #fff;
+  border-radius: 50%;
+  top: 3px;
+  left: 4px;
+  transition: 0.3s;
+}
+
+.kadp-toggle input:checked+span {
+  background: #6366f1;
+}
+
+.kadp-toggle input:checked+span::before {
+  transform: translateX(16px);
+}
